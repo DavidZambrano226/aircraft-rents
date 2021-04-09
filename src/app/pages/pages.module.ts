@@ -7,7 +7,8 @@ import { SharedModule } from '../shared/shared.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
 import { AircraftsComponent } from './aircrafts/aircrafts.component';
-
+import { AuthService } from '../services/auth/auth.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,7 +22,9 @@ import { AircraftsComponent } from './aircrafts/aircrafts.component';
     CommonModule,
     DasboardRoutingModule,
     SharedModule,
-    RouterModule
-  ]
+    RouterModule,
+    HttpClientModule
+  ],
+  providers: [AuthService]
 })
 export class PagesModule { }

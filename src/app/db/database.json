@@ -1,0 +1,13 @@
+{
+    "users": [
+      { "id": 1, "email": "test@test.com", "password": "MTIzNDU2", "role": "astronaut" },
+      { "id": 2, "email": "test2@test.com", "password": "MTIzNDU2", "role": "astronaut" },
+      { "id": 3, "email": "test3@test.com", "password": "MTIzNDU2", "role": "user" }
+    ],
+    "rents": [
+      { "id": 1, "location": "Bogotá", "departed": "2021-01-01", "arrived": "2021-01-02", "passagers": 10 },
+      { "id": 2, "location": "New York", "departed": "2021-01-01", "arrived": "2021-01-02", "passagers": 10 },
+      { "id": 3, "location": "Texas", "departed": "2021-01-01", "arrived": "2021-01-02", "passagers": 10 },
+      { "id": 4, "location": "Bogotá", "departed": "2021-01-01", "arrived": "2021-01-02", "passagers": 10 }
+    ]
+  }
