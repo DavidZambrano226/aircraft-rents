@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { AircraftsComponent } from './aircrafts/aircrafts.component';
 import { AuthService } from '../services/auth/auth.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     DasboardRoutingModule,
     SharedModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService]
 })

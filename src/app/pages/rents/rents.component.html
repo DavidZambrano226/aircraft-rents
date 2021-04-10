@@ -3,29 +3,18 @@
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Ubicación</th>
+            <th scope="col">Fecha de salida</th>
+            <th scope="col">Fecha de llegada</th>
+            <th scope="col">Num. Pasajeros</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+          <tr *ngFor="let rent of rents">
+            <th>{{rent.location}}</th>
+            <td>{{rent.departed | date}}</td>
+            <td>{{rent.arrived | date}}</td>
+            <td>{{rent.passagers}}</td>
           </tr>
         </tbody>
       </table>

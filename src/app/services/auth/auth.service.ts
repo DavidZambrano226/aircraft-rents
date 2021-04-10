@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { UserModel } from '../../models/user.model';
+import { InMemory } from '../../models/in-memory.model';
 
 @Injectable({
   providedIn: 'root'
@@ -16,5 +17,11 @@ export class AuthService {
     return this.http.get(path).pipe( 
       map ((user: UserModel) => user[0])
     );
+  }
+
+  logout() {
+    if (localStorage.getItem('isAuthenticate')) {
+      localStorage.removeItem('isAuthenticate');
+    }
   }
 }
