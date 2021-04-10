@@ -17,6 +17,18 @@
       "email": "test3@test.com",
       "password": "MTIzNDU2",
       "role": "user"
+    },
+    {
+      "email": "test3@test.com",
+      "password": "1234567",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "email": "test4@test.com",
+      "password": "123456",
+      "role": "astronaut",
+      "id": 5
     }
   ],
   "rents": [
@@ -81,6 +93,20 @@
       "brand": "someBrand",
       "numberOfPassagers": 20,
       "aditionalInformation": ""
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "user"
+    },
+    {
+      "id": 2,
+      "name": "astronaut"
+    },
+    {
+      "id": 3,
+      "name": "admin"
     }
   ]
 }
