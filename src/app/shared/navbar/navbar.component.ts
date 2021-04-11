@@ -10,9 +10,14 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
+  role: string;
+
   constructor( private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
+    if( localStorage.getItem('role')) {
+      this.role = localStorage.getItem('role');
+    }
   }
 
   logout() {

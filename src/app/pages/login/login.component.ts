@@ -28,7 +28,9 @@ export class LoginComponent implements OnInit {
     this.authService.authenticate(email, btoa(password))
     .subscribe(data => {
       if (!!data) {
+        const { role } = data;
         localStorage.setItem('isAuthenticate', 'true');
+        localStorage.setItem('role', role);
         this.router.navigate(['/']);
       } else {
         localStorage.setItem('isAuthenticate', 'false');

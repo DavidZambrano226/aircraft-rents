@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AircraftsService } from '../services/aircrafts/aircrafts.service';
 import { UsersService } from '../services/users/users.service';
 import { RequestsService } from '../services/requests/requests.service';
+import { RequestComponent } from './request/request.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RequestsService } from '../services/requests/requests.service';
     RentsComponent,
     UsersComponent,
     DashboardComponent,
-    AircraftsComponent
+    AircraftsComponent,
+    RequestComponent
   ],
   imports: [
     CommonModule,

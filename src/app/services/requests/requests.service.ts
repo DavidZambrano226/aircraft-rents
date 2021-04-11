@@ -17,4 +17,11 @@ export class RequestsService {
       map((resp: RentModel[]) => resp)
     )
   }
+
+  saveRequest(request: RentModel): Observable<RentModel> {
+    const url = `http://localhost:3000/rents`;
+    return this.http.post(url, request).pipe(
+      map((resp: RentModel) => resp)
+    );
+  }
 }

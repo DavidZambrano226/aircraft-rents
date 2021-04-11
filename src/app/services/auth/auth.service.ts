@@ -22,6 +22,7 @@ export class AuthService {
   logout() {
     if (localStorage.getItem('isAuthenticate')) {
       localStorage.removeItem('isAuthenticate');
+      localStorage.removeItem('role');
     }
   }
 }

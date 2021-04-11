@@ -1,0 +1,48 @@
+<h2>Reserva de vuelos</h2>
+<div class="card">
+    <div class="card-body bg-light">
+        <form [formGroup]="requestForm">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <label>Ubicación</label>
+                    </div>
+                    <div class="row">
+                        <input type="text" formControlName="location" class="form-control" placeholder="¿A donde vas?">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label>Llegada</label>
+                    </div>
+                    <div class="row">
+                        <input type="date" formControlName="arrived" class="form-control" placeholder="Agragar Fechas">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label>Salida</label>
+                    </div>
+                    <div class="row">
+                        <input type="date" formControlName="departed" class="form-control" placeholder="Agragar Fechas">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label>Pasajeros</label>
+                    </div>
+                    <div class="row">
+                        <input type="text" formControlName="passagers" class="form-control" placeholder="Agregar pasajeros">
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <button class="btn btn-primary" 
+                            [disabled]="requestForm.invalid"
+                            (click)="saveRequest()">
+                       <i class="fa fa-save"></i> Reservar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

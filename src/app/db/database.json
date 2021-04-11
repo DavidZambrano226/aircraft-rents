@@ -20,13 +20,13 @@
     },
     {
       "email": "test3@test.com",
-      "password": "1234567",
+      "password": "MTIzNDU2",
       "role": "user",
       "id": 4
     },
     {
       "email": "test4@test.com",
-      "password": "123456",
+      "password": "MTIzNDU2",
       "role": "astronaut",
       "id": 5
     }
@@ -59,6 +59,13 @@
       "departed": "2021-01-01",
       "arrived": "2021-01-02",
       "passagers": 10
+    },
+    {
+      "location": "Marte",
+      "arrived": "2021-04-16",
+      "departed": "2021-04-14",
+      "passagers": "8",
+      "id": 5
     }
   ],
   "aircrafts": [
@@ -103,10 +110,6 @@
     {
       "id": 2,
       "name": "astronaut"
-    },
-    {
-      "id": 3,
-      "name": "admin"
     }
   ]
 }

@@ -25,6 +25,7 @@ export class UsersService {
 
   saveUser( user: UserModel ): Observable<UserModel> {
     const url = `http://localhost:3000/users`;
+    user.password = btoa(user.password);
     return this.http.post(url, user).pipe(
       map( (resp: UserModel) => resp)
     )
